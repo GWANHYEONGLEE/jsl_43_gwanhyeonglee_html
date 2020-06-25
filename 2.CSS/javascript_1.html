@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript 연습</title>
+    <script>
+        function aaa(){
+            var a = 10;
+            var b = 20;
+
+            var kor = point.t_tor.value;
+            var kor = point.t_eng.value;
+            var kor = point.t_mat.value;
+            var total = Number(kor) + Number(eng) + Number(mat);
+            point.total.value =total;
+            alert(" 총점"+total);
+        }
+
+/*
+        document.write("javascript~~~~~~");
+        var name="홍길동";
+alert("111");
+        doument.write(Name);
+alert("222");
+        var aa = 30;
+        var bb = 40;
+        var cc = aa + bb;
+
+        doument.write(cc);
+*/
+    </script>
+</head>
+
+<body>
+   <form name="point">
+    <table border="1" width="700" px>
+        <caption>성적관리</caption>
+
+        <tr>
+            <th>성명</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>총점</th>
+            <th>평균</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="t_name"></td>
+            <td><input type="text" name="t_kor"></td>
+            <td><input type="text" name="t_eng"></td>
+            <td><input type="text" name="t_mat"></td>
+            <td><input type="text" name="t_total"></td>
+            <td><input type="text" name="t_eva"></td>
+        </tr>
+    </table>
+    </form>
+    <table width="700px">
+        <tr>
+            <td><input type="button" onclick="result=aaa()" value=" 계 산 "></td>
+        </tr>
+    </table>
+</body>
+
+</html>
